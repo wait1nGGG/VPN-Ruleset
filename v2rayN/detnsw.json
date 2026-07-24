@@ -1,0 +1,33 @@
+[
+    {
+        "domain":["domain:youtube.com","domain:gemini.google.com","domain:ai.google.dev"],
+        "outboundTag":"proxy",
+        "enabled":true,
+        "remarks":"Whitelist"
+    },
+    {
+        "domain":["domain:detnsw.net","domain:online.schoolbytes.education","geosite:google","geosite:apple","domain:chatswood-h.sentral.com.au","domain:educationperfect.com","domain:canva.com","domain:blooket.com","domain:kahoot.it"],
+        "outboundTag":"direct",
+        "enabled":true,
+        "remarks":"Blacklist"
+    },
+    {
+        "domain":["geosite:private"],
+        "outboundTag":"direct",
+        "enabled":true,
+        "remarks":"Pass Private Site"
+    },
+    {
+        "ip": ["geoip:private"],
+        "outboundTag": "direct",
+        "enabled": true,
+        "remarks": "Pass Private IP"
+    },
+    {
+        "port": "443",
+        "network": "udp",
+        "outboundTag": "block",
+        "enabled": true,
+        "remarks": "Block UDP 443"
+    }
+]
